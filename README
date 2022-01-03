@@ -1,0 +1,2 @@
+Requires psutil library. It install simply just run the line below:
+$sudo pip install psutil

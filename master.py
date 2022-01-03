@@ -6,12 +6,12 @@ import slave
 import os
 import subprocess
 
-# Define a function for the thread
+# Call the client, should be call to other machine in file design
 def Call_Client( threadName, delay):
    subprocess.run("slave.py 1")
 
 
-# Create two threads as follows
+# Create the threads
 try:
     _thread.start_new_thread( Call_Client, ("Client-1", 0, ) )
     _thread.start_new_thread( Call_Client, ("Client-2", 0, ) )
